@@ -55,10 +55,10 @@
             </TC_parameters>
             <SUT>
                 <N4GtpuSut pt:description="Sut">
-                    <name>10.0.193.10</name>
+                    <name>10.0.192.11</name>
                 </N4GtpuSut>
                 <N4UPSut pt:description="Sut">
-                    <name>10.0.193.11</name>
+                    <name>10.0.192.12</name>
                 </N4UPSut>
                 <N4UserSut pt:description="Sut">
                     <name>10.0.192.10</name>
@@ -71,10 +71,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.195.10</ip>
+                            <ip>10.0.196.10</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>10.0.195.1</nextHop>
+                            <nextHop>10.0.196.1</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/TS 1/Port 2/PHY name}</phy>
@@ -87,10 +87,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.196.11</ip>
+                            <ip>10.0.195.11</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>10.0.196.1</nextHop>
+                            <nextHop>10.0.195.1</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/TS 1/Port 1/PHY name}</phy>
@@ -103,10 +103,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.196.10</ip>
+                            <ip>10.0.195.10</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>10.0.196.1</nextHop>
+                            <nextHop>10.0.195.1</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/TS 1/Port 1/PHY name}</phy>
@@ -125,10 +125,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.193.11</ip>
+                            <ip>10.0.192.11</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>10.0.193.1</nextHop>
+                            <nextHop>10.0.192.1</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/Emulated SUT/Port 1/PHY name}</phy>
@@ -141,10 +141,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.193.10</ip>
+                            <ip>10.0.192.10</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>10.0.193.1</nextHop>
+                            <nextHop>10.0.192.1</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/Emulated SUT/Port 1/PHY name}</phy>
@@ -157,10 +157,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.192.11</ip>
+                            <ip>10.0.193.11</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>10.0.192.1</nextHop>
+                            <nextHop>10.0.193.1</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/Emulated SUT/Port 2/PHY name}</phy>
@@ -173,7 +173,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.192.10</ip>
+                            <ip>10.0.192.12</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>10.0.192.1</nextHop>
