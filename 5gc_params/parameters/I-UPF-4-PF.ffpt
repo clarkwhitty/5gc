@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<ParameterTree version="8.4.1.0">
+    <parameters escape="true">
+        <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+            <Topology_parameters>
+                <TAS pt:description="Required.">
+                    <Hostname pt:description="Required.">${topology/resources/TAS/Hostname}</Hostname>
+                    <ipAddress>${topology/resources/TAS/ipAddress}</ipAddress>
+                    <Username pt:description="Required." pt:mask="true">JW/NKGwyrDVTMqbnJB1KhEnIW5b9JKaVt4LGXySqTv7B0JFNHlUwhQ==</Username>
+                    <Password pt:description="Required." pt:mask="true">JW/NKGwyrDVTMqbnJB1KhEnIW5b9JKaVn4VpU758vMmTFUXJN32myA==</Password>
+                </TAS>
+                <Testservers>
+                    <EmulatedSUT>
+                        <TSName>${topology/resources/Emulated SUT/TS Name}</TSName>
+                        <Make>${topology/resources/Emulated SUT/Make}</Make>
+                        <Model>${topology/resources/Emulated SUT/Model}</Model>
+                        <Ports>
+                            <port1>
+                                <phyname>${topology/resources/Emulated SUT/Port 1/PHY name}</phyname>
+                                <ipv4Address>10.0.192.10</ipv4Address>
+                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
+                            </port1>
+                        </Ports>
+                    </EmulatedSUT>
+                    <TS1 pt:description="Required.">
+                        <TSName>${topology/resources/TS 1/TS Name}</TSName>
+                        <Ports>
+                            <port1>
+                                <phyname>${topology/resources/TS 1/Port 1/PHY name}</phyname>
+                                <ipv4Address>10.0.196.10</ipv4Address>
+                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
+                            </port1>
+                            <port2>
+                                <phyname>${topology/resources/TS 1/Port 2/PHY name}</phyname>
+                                <ipv4Address>10.0.195.10</ipv4Address>
+                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
+                            </port2>
+                            <port3>
+                                <phyname>${topology/resources/Emulated SUT/Port 3/PHY name}</phyname>
+                                <ipv4Address>10.0.197.10</ipv4Address>
+                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
+                            </port3>
+                        </Ports>
+                    </TS1>
+                </Testservers>
+            </Topology_parameters>
+            <TC_parameters>
+                <Targeted_End_Rate pt:datatype="INTEGER" pt:description="PDU Session Establishment Attempts/sec. It must be an integer greater than 0.">3000</Targeted_End_Rate>
+                <Session_Capacity pt:datatype="INTEGER" pt:description="PDU Sessions Establishment Attempts. It must be an even number greater than 0.">100000</Session_Capacity>
+                <Enable_TAC_Report pt:datatype="BOOLEAN">false</Enable_TAC_Report>
+                <Enable_Port_Capture pt:datatype="BOOLEAN" pt:description="Enable port capture for Nodal test on the sanity testing.">true</Enable_Port_Capture>
+            </TC_parameters>
+            <SUT>
+                <N4GtpuSut pt:description="Sut">
+                    <name>10.0.192.11</name>
+                </N4GtpuSut>
+                <N4UPSut pt:description="Sut">
+                    <name>10.0.192.12</name>
+                </N4UPSut>
+                <N4UserSut pt:description="Sut">
+                    <name>10.0.192.10</name>
+                </N4UserSut>
+            </SUT>
+            <LS_Nodal_favorite_params>
+                <ts0>
+                    <tc0>
+                        <GnbUserAddr pt:description="TestNode">
+                            <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
+                            <forcedEthInterface/>
+                            <innerVlanId>0</innerVlanId>
+                            <ip>10.0.195.10</ip>
+                            <mac/>
+                            <mtu>1500</mtu>
+                            <nextHop>10.0.195.1</nextHop>
+                            <numLinksOrNodes>1</numLinksOrNodes>
+                            <numVlan>1</numVlan>
+                            <phy>${topology/resources/TS 1/Port 2/PHY name}</phy>
+                            <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
+                            <vlanDynamic>0</vlanDynamic>
+                            <vlanId>0</vlanId>
+                            <vlanUserPriority>0</vlanUserPriority>
+                        </GnbUserAddr>
+                        <N4ControlGtpUAddr pt:description="TestNode">
+                            <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
+                            <forcedEthInterface/>
+                            <innerVlanId>0</innerVlanId>
+                            <ip>10.0.196.11</ip>
+                            <mac/>
+                            <mtu>1500</mtu>
+                            <nextHop>10.0.196.1</nextHop>
+                            <numLinksOrNodes>1</numLinksOrNodes>
+                            <numVlan>1</numVlan>
+                            <phy>${topology/resources/TS 1/Port 1/PHY name}</phy>
+                            <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
+                            <vlanDynamic>0</vlanDynamic>
+                            <vlanId>0</vlanId>
+                            <vlanUserPriority>0</vlanUserPriority>
+                        </N4ControlGtpUAddr>
+                        <N4ControlNodeAddr pt:description="TestNode">
+                            <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
+                            <forcedEthInterface/>
+                            <innerVlanId>0</innerVlanId>
+                            <ip>10.0.196.10</ip>
+                            <mac/>
+                            <mtu>1500</mtu>
+                            <nextHop>10.0.196.1</nextHop>
+                            <numLinksOrNodes>1</numLinksOrNodes>
+                            <numVlan>1</numVlan>
+                            <phy>${topology/resources/TS 1/Port 1/PHY name}</phy>
+                            <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
+                            <vlanDynamic>0</vlanDynamic>
+                            <vlanId>0</vlanId>
+                            <vlanUserPriority>0</vlanUserPriority>
+                        </N4ControlNodeAddr>
+                    </tc0>
+                </ts0>
+            </LS_Nodal_favorite_params>
+            <LS_Emulated_SUT_favorite_params pt:description="applicable for b2b only">
+                <ts0>
+                    <tc0>
+                        <N4UserGtpUAddr pt:description="TestNode">
+                            <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
+                            <forcedEthInterface/>
+                            <innerVlanId>0</innerVlanId>
+                            <ip>10.0.192.11</ip>
+                            <mac/>
+                            <mtu>1500</mtu>
+                            <nextHop>10.0.192.1</nextHop>
+                            <numLinksOrNodes>1</numLinksOrNodes>
+                            <numVlan>1</numVlan>
+                            <phy>${topology/resources/Emulated SUT/Port 1/PHY name}</phy>
+                            <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
+                            <vlanDynamic>0</vlanDynamic>
+                            <vlanId>0</vlanId>
+                            <vlanUserPriority>0</vlanUserPriority>
+                        </N4UserGtpUAddr>
+                        <N4UserNodeAddr pt:description="TestNode">
+                            <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
+                            <forcedEthInterface/>
+                            <innerVlanId>0</innerVlanId>
+                            <ip>10.0.192.10</ip>
+                            <mac/>
+                            <mtu>1500</mtu>
+                            <nextHop>10.0.192.1</nextHop>
+                            <numLinksOrNodes>1</numLinksOrNodes>
+                            <numVlan>1</numVlan>
+                            <phy>${topology/resources/Emulated SUT/Port 1/PHY name}</phy>
+                            <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
+                            <vlanDynamic>0</vlanDynamic>
+                            <vlanId>0</vlanId>
+                            <vlanUserPriority>0</vlanUserPriority>
+                        </N4UserNodeAddr>
+                        <UpfN3NodeAddr pt:description="TestNode">
+                            <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
+                            <forcedEthInterface/>
+                            <innerVlanId>0</innerVlanId>
+                            <ip>10.0.192.12</ip>
+                            <mac/>
+                            <mtu>1500</mtu>
+                            <nextHop>10.0.192.1</nextHop>
+                            <numLinksOrNodes>1</numLinksOrNodes>
+                            <numVlan>1</numVlan>
+                            <phy>${topology/resources/Emulated SUT/Port 1/PHY name}</phy>
+                            <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
+                            <vlanDynamic>0</vlanDynamic>
+                            <vlanId>0</vlanId>
+                            <vlanUserPriority>0</vlanUserPriority>
+                        </UpfN3NodeAddr>
+                    </tc0>
+                </ts0>
+            </LS_Emulated_SUT_favorite_params>
+        </parameters>
+    </parameters>
+    <description>- Requires 2 Test Servers
+
++ Emulated SUT: \t2 ports
++ TS 1: \t\t2 ports</description>
+</ParameterTree>
