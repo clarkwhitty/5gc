@@ -21,6 +21,18 @@
                                 <ipv4mask>255.255.255.0</ipv4mask>
                                 <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
                             </port1>
+                            <port2>
+                                <phyname>${topology/resources/Emulated SUT/Port 2/PHY name}</phyname>
+                                <ipv4Address>10.0.194.10</ipv4Address>
+                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
+                            </port2>
+                            <port3>
+                                <phyname>${topology/resources/Emulated SUT/Port 3/PHY name}</phyname>
+                                <ipv4Address>10.0.193.10</ipv4Address>
+                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
+                            </port3>
                         </Ports>
                     </EmulatedSUT>
                     <TS1 pt:description="Required.">
@@ -38,12 +50,6 @@
                                 <ipv4mask>255.255.255.0</ipv4mask>
                                 <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
                             </port2>
-                            <port3>
-                                <phyname>${topology/resources/Emulated SUT/Port 3/PHY name}</phyname>
-                                <ipv4Address>10.0.197.10</ipv4Address>
-                                <ipv4mask>255.255.255.0</ipv4mask>
-                                <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
-                            </port3>
                         </Ports>
                     </TS1>
                 </Testservers>
@@ -59,7 +65,7 @@
                     <name>10.0.192.11</name>
                 </N4GtpuSut>
                 <N4UPSut pt:description="Sut">
-                    <name>10.0.192.12</name>
+                    <name>10.0.194.10</name>
                 </N4UPSut>
                 <N4UserSut pt:description="Sut">
                     <name>10.0.192.10</name>
@@ -154,17 +160,33 @@
                             <vlanId>0</vlanId>
                             <vlanUserPriority>0</vlanUserPriority>
                         </N4UserNodeAddr>
+                        <N6NodeAddr pt:description="TestNode">
+                            <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
+                            <forcedEthInterface/>
+                            <innerVlanId>0</innerVlanId>
+                            <ip>10.0.193.10</ip>
+                            <mac/>
+                            <mtu>1500</mtu>
+                            <nextHop>10.0.193.1</nextHop>
+                            <numLinksOrNodes>1</numLinksOrNodes>
+                            <numVlan>1</numVlan>
+                            <phy>${topology/resources/Emulated SUT/Port 3/PHY name}</phy>
+                            <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
+                            <vlanDynamic>0</vlanDynamic>
+                            <vlanId>0</vlanId>
+                            <vlanUserPriority>0</vlanUserPriority>
+                        </N6NodeAddr>
                         <UpfN3NodeAddr pt:description="TestNode">
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>10.0.192.12</ip>
+                            <ip>10.0.194.10</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>10.0.192.1</nextHop>
+                            <nextHop>10.0.194.1</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
-                            <phy>${topology/resources/Emulated SUT/Port 1/PHY name}</phy>
+                            <phy>${topology/resources/Emulated SUT/Port 2/PHY name}</phy>
                             <uniqueVlanAddr pt:datatype="BOOLEAN">false</uniqueVlanAddr>
                             <vlanDynamic>0</vlanDynamic>
                             <vlanId>0</vlanId>
