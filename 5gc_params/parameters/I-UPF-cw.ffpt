@@ -65,6 +65,7 @@
                 <Activaction_Rate pt:datatype="INTEGER" pt:description="Default Subscribers/s. It must be an integer greater than 0.">1000</Activaction_Rate>
                 <Session_Capacity pt:datatype="INTEGER" pt:description="PDU Sessions Establishment Attempts. It must be an even number greater than 0.">100</Session_Capacity>
                 <Targeted_End_Rate pt:datatype="INTEGER" pt:description="PDU Session Establishment Attempts/sec. It must be an integer greater than 0.">1000</Targeted_End_Rate>
+                <CPA_License_Required pt:datatype="BOOLEAN">false</CPA_License_Required>
                 <Enable_Port_Capture pt:datatype="BOOLEAN" pt:description="Enable port capture for Nodal test on the sanity testing.">true</Enable_Port_Capture>
                 <Enable_TAC_Report pt:datatype="BOOLEAN">false</Enable_TAC_Report>
             </TC_parameters>
