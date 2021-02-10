@@ -71,13 +71,13 @@
             </TC_parameters>
             <SUT>
                 <N4GtpuSut pt:description="Sut">
-                    <name>${topology/resources/Emulated SUT/Port 2/IPV4_1}</name>
+                    <name>${topology/resources/Emulated SUT/Port 2/IPv4_1}</name>
                 </N4GtpuSut>
                 <N4UPSut pt:description="Sut">
-                    <name>${topology/resources/Emulated SUT/Port 1/IPV4_1}</name>
+                    <name>${topology/resources/Emulated SUT/Port 1/IPv4_1}</name>
                 </N4UPSut>
                 <N4UserSut pt:description="Sut">
-                    <name>${topology/resources/Emulated SUT/Port 2/IPV4_2}</name>
+                    <name>${topology/resources/Emulated SUT/Port 2/IPv4_2}</name>
                 </N4UserSut>
             </SUT>
             <LS_Nodal_favorite_params>
@@ -87,7 +87,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 1/IPV4_1}</ip>
+                            <ip>${topology/resources/TS 1/Port 1/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/TS 1/Port 1/IPV4 Gateway}</nextHop>
@@ -103,7 +103,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 2/IPV4_1}</ip>
+                            <ip>${topology/resources/TS 1/Port 2/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/TS 1/Port 2/IPV4 Gateway}</nextHop>
@@ -119,7 +119,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 2/IPV4_2}</ip>
+                            <ip>${topology/resources/TS 1/Port 2/IPv4_2}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/TS 1/Port 2/IPV4 Gateway}</nextHop>
@@ -135,7 +135,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 3/IPV4_1}</ip>
+                            <ip>${topology/resources/TS 1/Port 3/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/TS 1/Port 3/IPV4 Gateway}</nextHop>
@@ -157,7 +157,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/Emulated SUT/Port 2/IPV4_1}</ip>
+                            <ip>${topology/resources/Emulated SUT/Port 2/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/Emulated SUT/Port 2/IPV4 Gateway}</nextHop>
@@ -173,7 +173,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/Emulated SUT/Port 2/IPV4_2}</ip>
+                            <ip>${topology/resources/Emulated SUT/Port 2/IPv4_2}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/Emulated SUT/Port 2/IPV4 Gateway}</nextHop>
@@ -189,7 +189,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/Emulated SUT/Port 3/IPV4_1}</ip>
+                            <ip>${topology/resources/Emulated SUT/Port 3/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/Emulated SUT/Port 3/IPV4 Gateway}</nextHop>
@@ -205,7 +205,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/Emulated SUT/Port 1/IPV4_1}</ip>
+                            <ip>${topology/resources/Emulated SUT/Port 1/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/Emulated SUT/Port 1/IPV4 Gateway}</nextHop>
