@@ -36,13 +36,13 @@
             </TC_parameters>
             <SUT>
                 <N4GtpuSut pt:description="Sut">
-                    <name>172.31.33.160</name>
+                    <name>172.31.101.170</name>
                 </N4GtpuSut>
                 <N4UPSut pt:description="Sut">
-                    <name>172.31.33.160</name>
+                    <name>172.31.101.170</name>
                 </N4UPSut>
                 <N4UserSut pt:description="Sut">
-                    <name>172.31.33.160</name>
+                    <name>172.31.101.170</name>
                 </N4UserSut>
             </SUT>
             <LS_Nodal_favorite_params>
