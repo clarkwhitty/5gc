@@ -149,7 +149,7 @@
                             <ip>${topology/resources/Emulated SUT/Port 2/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>${topology/resources/Emulated SUT/Port 2/IPv4 Gateway}</nextHop>
+                            <nextHop>${topology/resources/Emulated SUT/Port 2/IPV4 Gateway}</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/Emulated SUT/Port 2/PHY name}</phy>
@@ -165,7 +165,7 @@
                             <ip>${topology/resources/Emulated SUT/Port 1/IPv4_3}</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>${topology/resources/Emulated SUT/Port 1/IPv4 Gateway}</nextHop>
+                            <nextHop>${topology/resources/Emulated SUT/Port 1/IPV4 Gateway}</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/Emulated SUT/Port 1/PHY name}</phy>
