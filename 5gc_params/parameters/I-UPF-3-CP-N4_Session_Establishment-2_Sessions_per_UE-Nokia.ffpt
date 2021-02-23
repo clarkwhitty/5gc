@@ -36,10 +36,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 1/IPv4_1}</ip>
+                            <ip>${topology/resources/TS 1/Port 2/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>${topology/resources/TS 1/Port 1/IPV4 Gateway}</nextHop>
+                            <nextHop>${topology/resources/TS 1/Port 2/IPV4 Gateway}</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/TS 1/Port 2/PHY name}</phy>
