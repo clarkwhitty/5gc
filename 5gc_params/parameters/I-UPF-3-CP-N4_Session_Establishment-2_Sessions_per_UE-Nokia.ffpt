@@ -91,7 +91,7 @@
                     <name>172.31.101.170</name>
                 </N4UPSut>
                 <N4UserSut pt:description="Sut">
-                    <name>${topology/resources/Emulated SUT/Port 1/IPv4_2}</name>
+                    <name>172.31.101.170</name>
                 </N4UserSut>
             </SUT>
             <TC_parameters>
