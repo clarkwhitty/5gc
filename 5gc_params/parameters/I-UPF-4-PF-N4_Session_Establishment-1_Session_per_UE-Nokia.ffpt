@@ -15,14 +15,14 @@
                         <Ports>
                             <port1>
                                 <phyname>${topology/resources/TS 1/Port 1/PHY name}</phyname>
-                                <ipv4Address>10.0.196.10</ipv4Address>
-                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4Address>${topology/resources/TS 1/Port 1/IPV4 starting IP address}</ipv4Address>
+                                <ipv4mask>${topology/resources/TS 1/Port 1/IPV4 mask}</ipv4mask>
                                 <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
                             </port1>
                             <port2>
                                 <phyname>${topology/resources/TS 1/Port 2/PHY name}</phyname>
-                                <ipv4Address>10.0.195.10</ipv4Address>
-                                <ipv4mask>255.255.255.0</ipv4mask>
+                                <ipv4Address>${topology/resources/TS 1/Port 2/IPV4 starting IP address}</ipv4Address>
+                                <ipv4mask>${topology/resources/TS 1/Port 2/IPV4 mask}</ipv4mask>
                                 <ipv4NumNode pt:datatype="INTEGER">10</ipv4NumNode>
                             </port2>
                         </Ports>
@@ -36,10 +36,10 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 1/IPv4_1}</ip>
+                            <ip>${topology/resources/TS 1/Port 2/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
-                            <nextHop>${topology/resources/TS 1/Port 1/IPV4 Gateway}</nextHop>
+                            <nextHop>${topology/resources/TS 1/Port 2/IPV4 Gateway}</nextHop>
                             <numLinksOrNodes>1</numLinksOrNodes>
                             <numVlan>1</numVlan>
                             <phy>${topology/resources/TS 1/Port 2/PHY name}</phy>
@@ -52,7 +52,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 1/IPv4_2}</ip>
+                            <ip>${topology/resources/TS 1/Port 1/IPv4_1}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/TS 1/Port 1/IPV4 Gateway}</nextHop>
@@ -68,7 +68,7 @@
                             <ethStatsEnabled pt:datatype="BOOLEAN">false</ethStatsEnabled>
                             <forcedEthInterface/>
                             <innerVlanId>0</innerVlanId>
-                            <ip>${topology/resources/TS 1/Port 1/IPv4_3}</ip>
+                            <ip>${topology/resources/TS 1/Port 1/IPv4_2}</ip>
                             <mac/>
                             <mtu>1500</mtu>
                             <nextHop>${topology/resources/TS 1/Port 1/IPV4 Gateway}</nextHop>
