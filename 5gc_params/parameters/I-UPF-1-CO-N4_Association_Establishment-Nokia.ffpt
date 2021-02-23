@@ -79,13 +79,13 @@
             </LS_Nodal_favorite_params>
             <SUT>
                 <N4GtpuSut pt:description="Sut">
-                    <name>172.31.101.170</name>
+                    <name>${topology/resources/Nokia-UPF-1/ipAddress}</name>
                 </N4GtpuSut>
                 <N4UPSut pt:description="Sut">
-                    <name>172.31.101.170</name>
+                    <name>${topology/resources/Nokia-UPF-1/ipAddress}</name>
                 </N4UPSut>
                 <N4UserSut pt:description="Sut">
-                    <name>172.31.101.170</name>
+                    <name>${topology/resources/Nokia-UPF-1/ipAddress}</name>
                 </N4UserSut>
             </SUT>
             <TC_parameters>
